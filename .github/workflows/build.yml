@@ -27,10 +27,10 @@ jobs:
         dotnet-version: '5.0.x'
         
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore Events/Events.csproj
       
     - name: Build
-      run: dotnet build --configuration Release --project ./Events/Events.csproj
+      run: dotnet build --configuration Release Events/Events.csproj
       
     - name: Test
-      run: dotnet test --configuration Release --no-build
+      run: dotnet test --configuration Release --no-build Events/Events.csproj
