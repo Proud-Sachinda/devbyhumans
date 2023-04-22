@@ -30,7 +30,7 @@ jobs:
       run: dotnet restore
       
     - name: Build
-      run: dotnet build --configuration Release
+      run: dotnet build --configuration Release --project ./Events/Events.csproj
       
     - name: Test
       run: dotnet test --configuration Release --no-build
