@@ -1,11 +1,12 @@
 name: .NET Core API Build
-description: Build and test the .NET Core API
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
